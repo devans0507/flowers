@@ -1,0 +1,83 @@
+
+const notes = [
+ {
+ id: 1,
+ text: "Harry Potter",
+ author: " JK Rowling",
+ date: "1997",
+ topics: ["childrens", "fantasy", "fiction"]
+ },
+ {
+ id: 2,
+ text: "Pride & Prejudice",
+ author: "Jane Austen",
+ date: "1813",
+ topics:["fiction", "romance", "classics"]
+ },
+ {
+ id: 3,
+ text: "Carrie",
+ author: "Stephen King",
+ date: "1974",
+ topics: ["thriller", "fiction", "suspense"]
+ },
+]
+
+const books =[
+    {
+    id: 4,
+    text: "Atomic Habits",
+    author: " James Clear",
+    date: "2008",
+    topics: ["self-help", "nonfiction", "psychology"]
+    },
+    {
+    id: 5,
+    text: "The Lion, The Witch, & the Wardrobe",
+    author: "C.S. Lewis",
+    date: "1950",
+    topics: ["fiction", "childrens", "fantasy"]
+    },
+    {
+    id: 6,
+    text: "King of Scars",
+    author: "Leigh Bardugo",
+    date: "2019",
+    topics: ["thriller", "fiction", "romance", "teen"]
+ },
+]
+
+for (const book of books){
+ notes.push(book)
+}
+
+for (const note of notes){
+    console.log(note.text)
+    }
+   
+    console.log("*** All Note Topics ***")
+for (const note of notes){
+ for (const topic of note.topics)
+ console.log(note.topics)
+}
+
+console.log("*** All Note Topics ***")
+let totalTopics = 0
+
+for (const note of notes){
+ for (const topic of note.topics) {
+ totalTopics += 1
+ }
+}
+
+const averageTopics = totalTopics /notes.length
+console.log(averageTopics)
+
+if (note.topics.includes("fiction")){
+    filteredNotes.push(note)
+   }
+   console.log(filteredNotes)
+
+   for (const note of notes){
+    htmlString += `<article> ${note.text}`
+   }
